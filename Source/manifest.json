@@ -1,0 +1,15 @@
+{
+	"manifest_version": 2,
+	"name": "Sanders",
+	"version": "1.0",
+	"description": "Replace presidential candidates name with their corporate sponsor.",
+	"content_scripts": 
+	[
+		{
+			"matches": ["*://*/*"],
+			"js": ["content_script.js"],
+			"run_at": "document_end"
+		}
+	]
+}
+
