@@ -9,10 +9,21 @@
 
  'use strict';
 
-class ExtensionClient {
-  constructor() {
-    console.log('Client script loaded.');
-  }
-}
+let treeWalker = document.createTreeWalker(
+  document.body,
+  NodeFilter.SHOW_TEXT,
+  { acceptNode: function(node) { console.log(node.nodeType); return NodeFilter.FILTER_ACCEPT; } },
+  false
+);
 
-new ExtensionClient();
+let nodeList = [];
+
+while(treeWalker.nextNode()){
+	
+	let v = treeWalker.currentNode.nodeValue;
+
+  	//v = v.split("").reverse().join("").split(" ").reverse().join(" ");
+  
+  	treeWalker.currentNode.nodeValue = v;
+
+};
