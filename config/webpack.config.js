@@ -5,7 +5,6 @@ module.exports = {
   context: __dirname + '/../src/js',
 
   entry: {
-    background: './background.js',
     client: './client.js',
     reload: './reload.js',
     common: [
@@ -23,11 +22,6 @@ module.exports = {
 
   module: {
     loaders: [
-      {
-        test: /\.js$/,
-        exclude: /\/node_modules/,
-        loader: 'babel'
-      },
       {
         test: /\.css$/,
         loader: 'style!css'
@@ -61,6 +55,6 @@ module.exports = {
       $: 'jquery',
       jQuery: 'jquery'
     }),
-   new webpack.optimize.CommonsChunkPlugin('common', 'common.js')
+    new webpack.optimize.CommonsChunkPlugin('common', 'common.js')
   ]
 };

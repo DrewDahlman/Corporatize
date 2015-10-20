@@ -1,13 +1,12 @@
-# Chrome Extension Boilerplate
+# Corporatize
 
-A boilerplate to kickstart Chrome extension development.
+A Chrome extension that swaps presidential candidate names with their top corporate sponsor
 
 ## Features
 
 * Gulp and Webpack build system.
 * Crx packaging.
 * Live reloading.
-* ES6 via Babel.
 * Linting via ESLint.
 
 ## Installation
