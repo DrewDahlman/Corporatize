@@ -34,12 +34,12 @@ new (function(){
 		var self = this;
 		//fetch data & set as local storage string
 		var xhr = new XMLHttpRequest();
-		xhr.open( "GET", "//apimessenger.com/candidates", true );
+		xhr.open( "GET", "https://apimessenger.com/candidates", true );
 		xhr.onreadystatechange = function() {
 		  if ( xhr.readyState == 4 && xhr.status == 200 ) {
 		    localStorage['corporatize'] = xhr.responseText;
 		    localStorage['corporatize_timestamp'] = new Date().getTime();
-		    this.initialize();	
+		    self.initialize();	
 		  }
 		}
 		xhr.send();

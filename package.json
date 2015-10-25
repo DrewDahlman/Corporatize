@@ -1,6 +1,6 @@
 {
   "name": "Corporatize",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A Chrome extension that swaps presidential candidate names with their top corporate sponsor",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
